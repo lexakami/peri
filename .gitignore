@@ -1,0 +1,17 @@
+/assets/
+
+/vendor/
+/resources/
+/node_modules/
+/app/tests/nightwatch_reports/
+/app/tests/nightwatch_screenshots/
+/raygun
+.env
+/themes/mysite/dist/app.js
+/themes/mysite/dist/app.css
+/.nightwatch.custom.json
+/simple-styleguide
+/.vagrant
+
+.idea
+.DS_Store

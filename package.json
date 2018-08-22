@@ -1,0 +1,29 @@
+{
+  "name": "peri",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Mikaela Young <mikaela@silverstripe.com>",
+  "license": "MIT",
+  "dependencies": {
+    "laravel-mix": "^2.0.0"
+  },
+  "scripts": {
+    "dev": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "lint": "eslint themes/app/src/** --ext .js",
+    "nightwatch": "nightwatch -c ./.nightwatch.conf.js"
+  },
+  "devDependencies": {
+    "chromedriver": "^2.33.2",
+    "cucumber": "^4.0.0",
+    "eslint": "^4.17.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-import": "^2.8.0",
+    "nightwatch": "^0.9.19",
+    "nightwatch-cucumber": "^9.0.0",
+    "selenium-server": "^3.8.1"
+  }
+}
