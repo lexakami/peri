@@ -1,12 +1,10 @@
 <% include Header %>
 
-<main class="container">
-    <div class="row">
-        <article class="col">
-            <h1>$Title</h1>
-            $Content
-        </article>
-    </div>
+<main class="grid container">
+    <article class="col">
+        <h1>$Title</h1>
+        $Content
+    </article>
 
     <% if $Form %>
         $Form

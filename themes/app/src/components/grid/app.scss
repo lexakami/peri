@@ -1,0 +1,35 @@
+.grid,
+.subgrid {
+  display: grid;
+}
+
+.grid--homepage {
+  gap: 2rem;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.subgrid--news {
+  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid__item,
+.subgrid__item {
+  border: 2px dashed blueviolet;
+}
+
+.grid__item--carousel {
+  grid-column: span 9;
+}
+
+.grid__item--favourites {
+  grid-column: span 3;
+}
+
+.grid__item--news {
+  grid-column: span 9;
+}
+
+.grid__item--tools {
+  grid-column: span 3;
+}
