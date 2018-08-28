@@ -1,4 +1,17 @@
+.news {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .news__button {
+  margin-top: 2rem;
   padding: 1rem;
   width: 100%;
+}
+
+.news__item {
+  border: 2px dashed blueviolet;
+  flex-basis: calc((100% - 4rem) / 3);
+  padding: 2rem;
 }

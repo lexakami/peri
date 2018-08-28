@@ -1,5 +1,4 @@
-.grid,
-.subgrid {
+.grid {
   display: grid;
 }
 
@@ -8,14 +7,12 @@
   grid-template-columns: repeat(12, 1fr);
 }
 
-.subgrid--news {
-  gap: 2rem;
-  grid-template-columns: repeat(3, 1fr);
+.grid__item {
+  border: 2px dashed blueviolet;
 }
 
-.grid__item,
-.subgrid__item {
-  border: 2px dashed blueviolet;
+.grid__item--bulletins {
+  grid-column: 1/-1;
 }
 
 .grid__item--carousel {

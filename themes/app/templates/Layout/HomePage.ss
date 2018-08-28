@@ -5,6 +5,7 @@
     <% include Favourites %>
     <% include News %>
     <% include Tools %>
+    <% include Bulletins %>
 </main>
 
 <% include Footer %>

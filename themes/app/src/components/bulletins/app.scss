@@ -1,0 +1,10 @@
+.bulletins {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bulletins__item {
+  border: 2px dashed blueviolet;
+  flex-basis: calc((100% - 6rem) / 4);
+  padding: 2rem;
+}
