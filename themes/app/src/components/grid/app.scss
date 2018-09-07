@@ -19,14 +19,30 @@
   grid-column: span 9;
 }
 
+.grid__item--events {
+  grid-column: span 4;
+}
+
 .grid__item--favourites {
   grid-column: span 3;
+}
+
+.grid__item--featured-blocks {
+  grid-column: 1/-1;
 }
 
 .grid__item--news {
   grid-column: span 9;
 }
 
+.grid__item--notices {
+  grid-column: span 4;
+}
+
 .grid__item--tools {
   grid-column: span 3;
+}
+
+.grid__item--updates {
+  grid-column: span 4;
 }

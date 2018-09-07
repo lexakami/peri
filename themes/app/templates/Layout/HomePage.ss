@@ -6,6 +6,10 @@
     <% include News %>
     <% include Tools %>
     <% include Bulletins %>
+    <% include FeaturedBlocks %>
+    <% include Updates %>
+    <% include Events %>
+    <% include Notices %>
 </main>
 
 <% include Footer %>

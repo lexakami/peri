@@ -1,0 +1,10 @@
+.featured-blocks {
+  display: flex;
+  justify-content: space-between;
+}
+
+.featured-blocks__item {
+  border: 2px dashed blueviolet;
+  flex-basis: calc((100% - 4rem) / 3);
+  padding: 2rem;
+}
