@@ -1597,6 +1597,10 @@ camel-case@3.0.x:
     no-case "^2.2.0"
     upper-case "^1.1.1"
 
+camelcase-css@^2.0.0:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/camelcase-css/-/camelcase-css-2.0.1.tgz#ee978f6947914cc30c6b44741b6ed1df7f043fd5"
+
 camelcase-keys@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/camelcase-keys/-/camelcase-keys-2.1.0.tgz#308beeaffdf28119051efa1d932213c91b8f92e7"
@@ -7756,6 +7760,13 @@ postcss-convert-values@^2.3.4:
     postcss "^5.0.11"
     postcss-value-parser "^3.1.2"
 
+postcss-custom-properties@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/postcss-custom-properties/-/postcss-custom-properties-7.0.0.tgz#24dc4fbe6d6ed550ea4fd3b11204660e9ffa3b33"
+  dependencies:
+    balanced-match "^1.0.0"
+    postcss "^6.0.18"
+
 postcss-discard-comments@^2.0.4:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/postcss-discard-comments/-/postcss-discard-comments-2.0.4.tgz#befe89fafd5b3dace5ccce51b76b81514be00e3d"
@@ -7805,6 +7816,13 @@ postcss-html@^0.33.0:
   integrity sha512-3keDoRG0o8bJZKe/QzkOPUD3GQQvAmYhIAtsGrgTxIXB6xZnSQq3gwPjCEd2IAUtz9/Fkus70XGm6xJEZ+bAmg==
   dependencies:
     htmlparser2 "^3.9.2"
+
+postcss-js@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/postcss-js/-/postcss-js-2.0.0.tgz#f75b70470009eb37f998ee9bb516a2899c19ef8d"
+  dependencies:
+    camelcase-css "^2.0.0"
+    postcss "^7.0.0"
 
 postcss-jsx@^0.33.0:
   version "0.33.0"
@@ -8146,7 +8164,7 @@ postcss@^5.0.10, postcss@^5.0.11, postcss@^5.0.12, postcss@^5.0.13, postcss@^5.0
     source-map "^0.5.6"
     supports-color "^3.2.3"
 
-postcss@^6.0.0, postcss@^6.0.1, postcss@^6.0.17, postcss@^6.0.8:
+postcss@^6.0.0, postcss@^6.0.1, postcss@^6.0.17, postcss@^6.0.18, postcss@^6.0.8:
   version "6.0.23"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-6.0.23.tgz#61c82cc328ac60e677645f979054eb98bc0e3324"
   integrity sha512-soOk1h6J3VMTZtVeVpv15/Hpdl2cBLX3CAw4TAbkpTJiNPk9YP/zWcD1ND+xEtvyuuvKzbxliTOIyvkSeSJ6ag==

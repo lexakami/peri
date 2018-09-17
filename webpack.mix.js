@@ -11,6 +11,22 @@ if (process.env.NODE_ENV === 'development') {
           test: /\.(js)$/,
           exclude: /node_modules/,
           loader: 'eslint-loader',
+          // use: [
+          //   'style-loader',
+          //   { loader: 'css-loader', options: { importLoaders: 2 } },
+          //   { loader: 'postcss-loader', options: { parser: 'postcss-js' } },
+          //   'babel-loader',
+          // ],
+        },
+        {
+          test: /\.scss$/,
+          // use: ['style-loader', 'postcss-loader', 'sass-loader'],
+          use: [
+            { loader: 'style-loader' },
+            { loader: 'css-loader', options: { importLoaders: 1 } },
+            { loader: 'postcss-loader', options: { parser: 'sugarss' } },
+            { loader: 'sass-loader' },
+          ],
         },
       ],
     },
@@ -37,7 +53,12 @@ if (process.env.NODE_ENV === 'development') {
 
 mix.js('themes/app/src/app.js', 'themes/app/dist/')
   .js('themes/app/src/components/**/*.js', 'themes/app/dist/app.js')
-  .options({ processCssUrls: false });
+  .options({
+    processCssUrls: false,
+    postCss: [
+      require('postcss-custom-properties'),
+    ],
+  });
 
 // if (process.env.NODE_ENV === 'production') {
 //   mix.minify('themes/app/dist/app.css')

@@ -1,0 +1,7 @@
+.carousel {
+  --test: blue;
+}
+
+.carousel__title {
+  color: var(--test);
+}
