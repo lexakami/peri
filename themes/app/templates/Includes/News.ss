@@ -9,6 +9,6 @@
         <article class="news__item">
             <h3>Pinned culture news item</h3>
         </article>
+        <button class="news__button">Show all news</button>
     </div>
-    <button class="news__button">Show all news</button>
 </section>

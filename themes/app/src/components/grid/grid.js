@@ -1,3 +1,3 @@
-import './app.scss';
+import './grid.scss';
 
 // console.log('grid');
