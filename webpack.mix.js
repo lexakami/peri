@@ -18,16 +18,6 @@ if (process.env.NODE_ENV === 'development') {
           //   'babel-loader',
           // ],
         },
-        {
-          test: /\.scss$/,
-          // use: ['style-loader', 'postcss-loader', 'sass-loader'],
-          use: [
-            { loader: 'style-loader' },
-            { loader: 'css-loader', options: { importLoaders: 1 } },
-            { loader: 'postcss-loader', options: { parser: 'sugarss' } },
-            { loader: 'sass-loader' },
-          ],
-        },
       ],
     },
     plugins: [
@@ -52,7 +42,7 @@ if (process.env.NODE_ENV === 'development') {
 // import scss in js file
 
 mix.js('themes/app/src/app.js', 'themes/app/dist/')
-  .js('themes/app/src/components/**/*.js', 'themes/app/dist/app.js')
+  .sass('themes/app/src/app.scss', 'themes/app/dist/')
   .options({
     processCssUrls: false,
     postCss: [
@@ -66,6 +56,7 @@ mix.js('themes/app/src/app.js', 'themes/app/dist/')
 // }
 
 if (process.env.NODE_ENV === 'production') {
-  mix.minify('themes/app/dist/app.js');
+  mix.minify('themes/app/dist/app.css')
+    .minify('themes/app/dist/app.js');
 }
 

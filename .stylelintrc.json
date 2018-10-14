@@ -17,6 +17,7 @@
         "function-url-scheme-blacklist": ["/^http/"],
         "function-url-quotes": ["always"],
         "string-quotes": ["single"],
+        "at-rule-empty-line-before": null,
         "at-rule-no-unknown": null,
         "scss/at-rule-no-unknown": true,
         "scss/at-import-no-partial-leading-underscore": true,

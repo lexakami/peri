@@ -1,1 +1,1 @@
-import './bulletins.scss';
+console.log('bulletins');
