@@ -36,7 +36,7 @@ if (process.env.NODE_ENV === 'development') {
 // import scss in js file
 
 mix.js('themes/app/src/app.js', 'themes/app/dist/')
-  .js('themes/app/src/components/**/*.js', 'themes/app/dist/')
+  .js('themes/app/src/components/**/*.js', 'themes/app/dist/app.js')
   .options({ processCssUrls: false });
 
 // if (process.env.NODE_ENV === 'production') {

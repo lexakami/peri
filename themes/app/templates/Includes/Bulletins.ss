@@ -7,3 +7,4 @@
         <article class="bulletins__item">Have your say</article>
     </div>
 </section>
+
