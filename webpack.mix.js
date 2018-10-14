@@ -11,12 +11,6 @@ if (process.env.NODE_ENV === 'development') {
           test: /\.(js)$/,
           exclude: /node_modules/,
           loader: 'eslint-loader',
-          // use: [
-          //   'style-loader',
-          //   { loader: 'css-loader', options: { importLoaders: 2 } },
-          //   { loader: 'postcss-loader', options: { parser: 'postcss-js' } },
-          //   'babel-loader',
-          // ],
         },
       ],
     },
@@ -28,16 +22,6 @@ if (process.env.NODE_ENV === 'development') {
   mix.sourceMaps();
 }
 
-// mix.js('themes/app/src/js/app.js', 'themes/app/dist/')
-//   .sass('themes/app/src/scss/app.scss', 'themes/app/dist/')
-//   .options({ processCssUrls: false });
-
-// mix.js('themes/app/src/app.js', 'themes/app/dist/')
-//   .js('themes/app/src/components/**/*.js', 'themes/app/dist/')
-//   .sass('themes/app/src/app.scss', 'themes/app/dist/')
-//   .sass('themes/app/src/components/**/*.scss', 'themes/app/dist/')
-//   .options({ processCssUrls: false });
-
 // Can use mix.js for scss or any file as long as theres a loader for it
 // import scss in js file
 
@@ -46,14 +30,9 @@ mix.js('themes/app/src/app.js', 'themes/app/dist/')
   .options({
     processCssUrls: false,
     postCss: [
-      require('postcss-custom-properties'),
+      require('postcss-custom-properties')(),
     ],
   });
-
-// if (process.env.NODE_ENV === 'production') {
-//   mix.minify('themes/app/dist/app.css')
-//     .minify('themes/app/dist/app.js');
-// }
 
 if (process.env.NODE_ENV === 'production') {
   mix.minify('themes/app/dist/app.css')

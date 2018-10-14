@@ -1,7 +1,7 @@
-.carousel {
-  --test: blue;
+:root {
+  --carousel-color: blue;
 }
 
 .carousel__title {
-  color: var(--test);
+  color: var(--carousel-color);
 }

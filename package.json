@@ -26,20 +26,11 @@
     "eslint-plugin-import": "^2.8.0",
     "nightwatch": "^0.9.19",
     "nightwatch-cucumber": "^9.0.0",
-    "postcss": "^7.0.2",
-    "postcss-custom-properties": "^7.0.0",
-    "postcss-js": "^2.0.0",
+    "postcss-custom-properties": "^8.0.0",
     "selenium-server": "^3.8.1",
     "stylelint": "^9.5.0",
     "stylelint-config-standard": "^18.2.0",
     "stylelint-scss": "^3.3.0",
     "stylelint-webpack-plugin": "^0.10.5"
-  },
-  "postcss": {
-    "parser": "sugarss",
-    "map": false,
-    "plugins": {
-      "postcss-custom-properties": {}
-    }
   }
 }
